@@ -17,7 +17,7 @@ public class Ejemplo02 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        String cadenaFinal = "";
+        String cadenaFinal = ""; // inicializarla porque debe tener un valor 
         double nota;
         boolean bandera = true;
         String salida;
@@ -39,3 +39,7 @@ public class Ejemplo02 {
         System.out.printf("Listado de Notas\n%s\n", cadenaFinal);
     }
 }
+// puede estar en une xamne, este do while le termina la bandera 
+// para hacer comparaciones se usa equals 
+// limpieza del buffer cuadnro ingrese un valor, 
+// cadena final = cadena vacia

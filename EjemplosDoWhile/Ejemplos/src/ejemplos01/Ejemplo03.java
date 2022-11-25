@@ -18,9 +18,11 @@ public class Ejemplo03 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         String cadenaFinal = "";
+        
         double nota;
         boolean bandera = true;
         int salida;
+        
         do {
             System.out.println("Ingrese calificaciones");
             nota = entrada.nextDouble();
@@ -29,11 +31,11 @@ public class Ejemplo03 {
             System.out.println("Ingrese (-111) si desea salir del ciclo ");
             salida = entrada.nextInt();
 
-            if (salida == -111) {
+            if (salida == -111) { // equals es para cadenas y == numerico
                 bandera = false;
             }
 
-        } while (bandera); // (bandera==true)
+        } while (bandera); // while (bandera==true)
         System.out.printf("Listado de Notas\n%s\n", cadenaFinal);
     }
 }

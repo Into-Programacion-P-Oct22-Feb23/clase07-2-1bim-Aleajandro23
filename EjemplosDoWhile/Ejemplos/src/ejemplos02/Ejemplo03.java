@@ -17,15 +17,17 @@ public class Ejemplo03 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
+        
         String cadenaFinal = "";
         double nota;
         boolean bandera = true;
         int salida;
-        
+        double notafinal;
+        double sumanotas = 0;
         do {
             System.out.println("Ingrese calificaciones");
             nota = entrada.nextDouble();
-            
+            sumanotas = sumanotas + nota;
             cadenaFinal = String.format("%s%.2f\n", cadenaFinal, 
                     nota);
             
@@ -40,5 +42,6 @@ public class Ejemplo03 {
         
         cadenaFinal = String.format("%s\n", cadenaFinal);
         System.out.printf("Listado de Notas\n%s\n", cadenaFinal);
+        System.out.printf("Suma nota\n%.2f\n", sumanotas);
     }
 }
